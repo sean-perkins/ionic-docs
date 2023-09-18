@@ -3,16 +3,19 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@ionic/"],
-      "groupName": "ionic"
+      "matchPackagePatterns": ["@ionic"],
+      "groupName": "ionic",
+      "schedule": ["every weekday before 11am"]
     },
     {
-      "matchPackagePatterns": ["^@angular/"],
-      "groupName": "angular"
+      "matchPackagePatterns": ["@angular"],
+      "groupName": "angular",
+      "schedule": ["on the first day of the month"]
     },
     {
-      "matchPackagePatterns": ["^@ionic/"],
+      "matchPackagePatterns": ["@ionic"],
       "allowedVersions": "^6.0.0",
+      "groupName": "ionic",
       "matchFileNames": ["static/code/stackblitz/v6/**/package.json"]
     }
   ],
