@@ -3,12 +3,12 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["@ionic"],
+      "matchPackagePatterns": ["@ionic/"],
       "groupName": "ionic",
       "schedule": ["every weekday before 11am"]
     },
     {
-      "matchPackagePatterns": ["@angular"],
+      "matchPackagePatterns": ["@angular/"],
       "groupName": "angular",
       "schedule": ["on the first day of the month"]
     }
@@ -18,8 +18,14 @@
   "rebaseWhen": "never",
   "schedule": ["every weekday before 11am"],
   "semanticCommits": "enabled",
-  "excludeCommitPaths": [
-    "package.json",
-    "package-lock.json"
+  "includePaths": [
+    "static/code/stackblitz/v6/angular/package.json",
+    "static/code/stackblitz/v6/html/package.json",
+    "static/code/stackblitz/v6/react/package.json",
+    "static/code/stackblitz/v6/vue/package.json",
+    "static/code/stackblitz/v7/angular/package.json",
+    "static/code/stackblitz/v7/html/package.json",
+    "static/code/stackblitz/v7/react/package.json",
+    "static/code/stackblitz/v7/vue/package.json"
   ]
 }
