@@ -17,6 +17,5 @@
   "minimumReleaseAge": "3 days",
   "rebaseWhen": "never",
   "schedule": ["every weekday before 11am"],
-  "semanticCommits": "enabled",
-  "includePaths": ["static/code/stackblitz"]
+  "semanticCommits": "enabled"
 }
