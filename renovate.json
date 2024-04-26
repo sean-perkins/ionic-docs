@@ -70,6 +70,6 @@
     "static/code/stackblitz/**/*/package.json"
   ],
   "ignorePaths": [
-    "static/code/stackblitz/v6"
+    "static/code/stackblitz/v6/**"
   ]
 }
